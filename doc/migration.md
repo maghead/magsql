@@ -1,18 +1,18 @@
 Migration
 =========
 
-SQLBuilder provides MigrationBuilder for generating 
+Magsql provides MigrationBuilder for generating 
 SQL for migration tasks.
 
 To use MigrationBuilder is pretty simple, just like QueryBuilder 
 simply pass the driver object to the constructor of MigrationBuilder object.
 
-    $driver = new SQLBuilder\QueryDriver;
-    $builder = new SQLBuilder\MigrationBuilder( $driver );
+    $driver = new Magsql\QueryDriver;
+    $builder = new Magsql\MigrationBuilder( $driver );
 
 To Add column
 
-    use SQLBuilder\Column;
+    use Magsql\Column;
     $sql = $builder->addColumn( 'members', 
             Column::create('price')
                 ->integer()

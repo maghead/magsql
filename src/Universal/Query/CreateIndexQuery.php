@@ -1,16 +1,16 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Exception\CriticalIncompatibleUsageException;
-use SQLBuilder\Exception\IncompleteSettingsException;
-use SQLBuilder\Exception\UnsupportedDriverException;
-use SQLBuilder\PgSQL\Traits\ConcurrentlyTrait;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Exception\CriticalIncompatibleUsageException;
+use Magsql\Exception\IncompleteSettingsException;
+use Magsql\Exception\UnsupportedDriverException;
+use Magsql\PgSQL\Traits\ConcurrentlyTrait;
 
 /**
  SELECT * FROM points.

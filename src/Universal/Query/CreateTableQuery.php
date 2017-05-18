@@ -1,13 +1,13 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Universal\Syntax\Column;
-use SQLBuilder\Universal\Traits\ConstraintTrait;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Universal\Syntax\Column;
+use Magsql\Universal\Traits\ConstraintTrait;
 
 /**
  * MySQL Create Table Syntax.

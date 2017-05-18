@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\Universal\Expr;
+namespace Magsql\Universal\Expr;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Bind;
+use Magsql\Driver\BaseDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Bind;
 
 class RawExpr implements ToSqlInterface
 {

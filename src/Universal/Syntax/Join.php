@@ -1,13 +1,13 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\ToSqlInterface;
 use BadMethodCallException;
-use SQLBuilder\MySQL\Traits\IndexHintTrait;
+use Magsql\MySQL\Traits\IndexHintTrait;
 
 class Join implements ToSqlInterface
 {

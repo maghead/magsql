@@ -1,16 +1,16 @@
 <?php
-use SQLBuilder\Universal\Query\CreateTableQuery;
-use SQLBuilder\Universal\Query\DropTableQuery;
-use SQLBuilder\Universal\Query\AlterTableQuery;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Raw;
-use SQLBuilder\Universal\Syntax\Column;
-use SQLBuilder\Universal\Syntax\Distinct;
-use SQLBuilder\Universal\Expr\FuncCallExpr;
+use Magsql\Universal\Query\CreateTableQuery;
+use Magsql\Universal\Query\DropTableQuery;
+use Magsql\Universal\Query\AlterTableQuery;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
+use Magsql\ArgumentArray;
+use Magsql\Raw;
+use Magsql\Universal\Syntax\Column;
+use Magsql\Universal\Syntax\Distinct;
+use Magsql\Universal\Expr\FuncCallExpr;
 
 class DistinctTest extends PDOQueryTestCase
 {

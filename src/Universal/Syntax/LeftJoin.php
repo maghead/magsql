@@ -1,8 +1,8 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\ToSqlInterface;
+use Magsql\ToSqlInterface;
 
 class LeftJoin extends Join implements ToSqlInterface
 {

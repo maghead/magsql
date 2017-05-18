@@ -1,13 +1,13 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Exception\UnsupportedDriverException;
+use Magsql\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\ArgumentArray;
+use Magsql\Exception\UnsupportedDriverException;
 
 class AlterTableRenameColumn implements ToSqlInterface
 {

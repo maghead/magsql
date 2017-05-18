@@ -1,8 +1,8 @@
 <?php
-use SQLBuilder\Testing\QueryTestCase;
-use SQLBuilder\Universal\Query\CreateIndexQuery;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
+use Magsql\Testing\QueryTestCase;
+use Magsql\Universal\Query\CreateIndexQuery;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
 
 class CreateIndexQueryTest extends QueryTestCase
 {
@@ -39,7 +39,7 @@ class CreateIndexQueryTest extends QueryTestCase
     }
 
     /**
-     * @expectedException SQLBuilder\Exception\IncompleteSettingsException
+     * @expectedException Magsql\Exception\IncompleteSettingsException
      */
     public function testCreateIndexWithoutTableName()
     {

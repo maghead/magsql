@@ -1,8 +1,8 @@
 <?php
-use SQLBuilder\Universal\Query\SelectQuery;
-use SQLBuilder\Universal\Query\UnionQuery;
-use SQLBuilder\Testing\QueryTestCase;
-use SQLBuilder\Driver\MySQLDriver;
+use Magsql\Universal\Query\SelectQuery;
+use Magsql\Universal\Query\UnionQuery;
+use Magsql\Testing\QueryTestCase;
+use Magsql\Driver\MySQLDriver;
 
 class UnionQueryTest extends QueryTestCase
 {

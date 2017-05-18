@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder;
+namespace Magsql;
 
 use BadMethodCallException;
 use ReflectionClass;
@@ -14,7 +14,7 @@ use ReflectionClass;
  *
  * class FooQuery {
  *
- *   use SQLBuilder\SyntaxExtender;
+ *   use Magsql\SyntaxExtender;
  *
  *   public function __call($methodName, $arguments = array()) {
  *     return $this->someProperty = $this->handleSyntax($methodName, $arguments);

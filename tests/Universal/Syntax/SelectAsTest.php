@@ -1,17 +1,17 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Bind;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Query\ExplainQuery;
-use SQLBuilder\Testing\QueryTestCase;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\Universal\Query\SelectQuery;
-use SQLBuilder\Universal\Expr\FuncCallExpr;
-use SQLBuilder\Universal\Query\CreateTableQuery;
-use SQLBuilder\Universal\Query\DropTableQuery;
-use SQLBuilder\Universal\Syntax\SelectAs;
-use SQLBuilder\ANSI\AggregateFunction;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\Bind;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Query\ExplainQuery;
+use Magsql\Testing\QueryTestCase;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\Universal\Query\SelectQuery;
+use Magsql\Universal\Expr\FuncCallExpr;
+use Magsql\Universal\Query\CreateTableQuery;
+use Magsql\Universal\Query\DropTableQuery;
+use Magsql\Universal\Syntax\SelectAs;
+use Magsql\ANSI\AggregateFunction;
 
 class SelectAsTest extends \PHPUnit\Framework\TestCase
 {

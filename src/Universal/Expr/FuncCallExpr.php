@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\Universal\Expr;
+namespace Magsql\Universal\Expr;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\ToSqlInterface;
 
 /**
  * MySQL Function Name Parsing and Resolution.

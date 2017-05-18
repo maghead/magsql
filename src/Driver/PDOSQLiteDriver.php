@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder\Driver;
+namespace Magsql\Driver;
 
 use PDO;
 

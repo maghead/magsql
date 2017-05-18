@@ -1,7 +1,7 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Universal\Syntax\Paging;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Universal\Syntax\Paging;
+use Magsql\ArgumentArray;
 
 class PagingTest extends \PHPUnit\Framework\TestCase
 {

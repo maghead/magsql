@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\MySQL\Query;
+namespace Magsql\MySQL\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Traits\UserSpecTrait;
+use Magsql\Driver\BaseDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Traits\UserSpecTrait;
 
 /**
  @see http://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html#sysvar_old_passwords

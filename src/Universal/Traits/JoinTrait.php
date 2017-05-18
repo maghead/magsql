@@ -1,12 +1,12 @@
 <?php
 
-namespace SQLBuilder\Universal\Traits;
+namespace Magsql\Universal\Traits;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\Join;
-use SQLBuilder\Universal\Syntax\LeftJoin;
-use SQLBuilder\Universal\Syntax\RightJoin;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\Join;
+use Magsql\Universal\Syntax\LeftJoin;
+use Magsql\Universal\Syntax\RightJoin;
 
 trait JoinTrait
 {

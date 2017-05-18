@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\Universal\Expr;
+namespace Magsql\Universal\Expr;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\DataType\Unknown;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\DataType\Unknown;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
 use InvalidArgumentException;
 
 class IsExpr implements ToSqlInterface

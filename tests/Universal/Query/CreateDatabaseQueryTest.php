@@ -1,12 +1,12 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Query\CreateDatabaseQuery;
-use SQLBuilder\Universal\Query\DropDatabaseQuery;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Testing\PDOQueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Query\CreateDatabaseQuery;
+use Magsql\Universal\Query\DropDatabaseQuery;
+use Magsql\ToSqlInterface;
+use Magsql\Testing\PDOQueryTestCase;
 
 class CreateDatabaseQueryTest extends PDOQueryTestCase
 {

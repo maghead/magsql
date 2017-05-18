@@ -1,13 +1,13 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Universal\Syntax\Conditions;
-use SQLBuilder\Criteria;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\DataType\Unknown;
-use SQLBuilder\Bind;
-use SQLBuilder\Raw;
-use SQLBuilder\Testing\QueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Universal\Syntax\Conditions;
+use Magsql\Criteria;
+use Magsql\ArgumentArray;
+use Magsql\DataType\Unknown;
+use Magsql\Bind;
+use Magsql\Raw;
+use Magsql\Testing\QueryTestCase;
 
 class ConditionsTest extends QueryTestCase
 {
@@ -31,7 +31,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testAppendExpr() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         ok($driver);
 
         $exprBuilder = new Conditions;
@@ -42,7 +42,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testInExpr() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->in('b', [ 'a', 'b', 'c' ]);
         $sql = $expr->toSql($driver, $args);
@@ -52,7 +52,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testNotInExpr() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->notIn('z', [ 'a', 'b', 'c' ]);
         $sql = $expr->toSql($driver, $args);
@@ -61,7 +61,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testEqual() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->equal('a', 1);
         $sql = $expr->toSql($driver, $args);
@@ -71,7 +71,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testLessThan() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->lessThan('view', 100);
         $sql = $expr->toSql($driver, $args);
@@ -80,7 +80,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testLessThanOrEqual() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->lessThanOrEqual('view', 100);
         $sql = $expr->toSql($driver, $args);
@@ -89,7 +89,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testGreaterThan() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->greaterThan('view', 100);
         $sql = $expr->toSql($driver, $args);
@@ -98,7 +98,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testGreaterThanOrEqual() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->greaterThanOrEqual('view', 100);
         $sql = $expr->toSql($driver, $args);
@@ -107,7 +107,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testNotEqual() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->notEqual('a', 1);
         $sql = $expr->toSql($driver, $args);
@@ -116,7 +116,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testIsNot() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
 
         $expr = new Conditions;
         $expr->isNot('is_book', TRUE);
@@ -140,7 +140,7 @@ class ConditionsTest extends QueryTestCase
     public function testOperatorMethod()
     {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
 
         $conditions = new Conditions;
         $conditions->is('confirmed', TRUE)
@@ -155,7 +155,7 @@ class ConditionsTest extends QueryTestCase
     public function testOperatorXor()
     {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
 
         $conditions = new Conditions;
         $conditions->is('confirmed', TRUE)
@@ -169,7 +169,7 @@ class ConditionsTest extends QueryTestCase
     public function testConditionGroup()
     {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
 
         $conditions = new Conditions;
         $conditions->is('confirmed', TRUE)
@@ -186,7 +186,7 @@ class ConditionsTest extends QueryTestCase
 
     public function testIs() {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
 
         $expr = new Conditions;
         $expr->is('is_book', TRUE);
@@ -224,7 +224,7 @@ class ConditionsTest extends QueryTestCase
      */
     public function testLikeExpr($criteria, $pat, $expectedSql) {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->like('name', $pat, $criteria);
         $sql = $expr->toSql($driver, $args);
@@ -242,7 +242,7 @@ class ConditionsTest extends QueryTestCase
     public function testRegExp()
     {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->regExp('content', '.*');
         $sql = $expr->toSql($driver, $args);
@@ -307,7 +307,7 @@ class ConditionsTest extends QueryTestCase
     public function testNotRegExp()
     {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->notRegExp('content', '.*');
         $sql = $expr->toSql($driver, $args);
@@ -317,7 +317,7 @@ class ConditionsTest extends QueryTestCase
     public function testBetweenExprWithDateTime()
     {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->between('created_at', new DateTime, new DateTime);
         $sql = $expr->toSql($driver, $args);
@@ -328,7 +328,7 @@ class ConditionsTest extends QueryTestCase
     public function testBetweenExpr()
     {
         $args = new ArgumentArray;
-        $driver = new SQLBuilder\Driver\MySQLDriver;
+        $driver = new Magsql\Driver\MySQLDriver;
         $expr = new Conditions;
         $expr->between('created_at', date('c') , date('c', time() + 3600));
         $sql = $expr->toSql($driver, $args);
@@ -343,7 +343,7 @@ class ConditionsTest extends QueryTestCase
         $code = '$ret =     ' . var_export($expr, true) . ';';
         eval($code);
         $this->assertNotEmpty($ret);
-        $this->assertInstanceOf('SQLBuilder\Universal\Syntax\Conditions', $ret);
+        $this->assertInstanceOf('Magsql\Universal\Syntax\Conditions', $ret);
     }
 }
 

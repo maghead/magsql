@@ -1,11 +1,11 @@
 <?php
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Bind;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Universal\Query\SelectQuery;
-use SQLBuilder\ANSI\AggregateFunction;
-use SQLBuilder\Universal\Syntax\SelectAs;
-use SQLBuilder\Universal\Syntax\Distinct;
+use Magsql\ArgumentArray;
+use Magsql\Bind;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Universal\Query\SelectQuery;
+use Magsql\ANSI\AggregateFunction;
+use Magsql\Universal\Syntax\SelectAs;
+use Magsql\Universal\Syntax\Distinct;
 
 class AggregateFunctionTest extends \PHPUnit\Framework\TestCase
 {

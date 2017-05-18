@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder\Universal\Traits;
+namespace Magsql\Universal\Traits;
 
 trait OptionTrait
 {

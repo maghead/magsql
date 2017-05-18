@@ -1,14 +1,14 @@
 <?php
-use SQLBuilder\Raw;
-use SQLBuilder\Query\UpdateQuery;
-use SQLBuilder\Query\DeleteQuery;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
-use SQLBuilder\Universal\Expr\FuncCallExpr;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Bind;
+use Magsql\Raw;
+use Magsql\Query\UpdateQuery;
+use Magsql\Query\DeleteQuery;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
+use Magsql\Universal\Expr\FuncCallExpr;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Bind;
 
 class FuncCallExprTest extends \PHPUnit\Framework\TestCase
 {

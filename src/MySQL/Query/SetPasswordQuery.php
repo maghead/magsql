@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\MySQL\Query;
+namespace Magsql\MySQL\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Syntax\UserSpecification;
+use Magsql\Driver\BaseDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Syntax\UserSpecification;
 use BadMethodCallException;
 
 /**

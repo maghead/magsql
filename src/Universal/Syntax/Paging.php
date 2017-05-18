@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\ToSqlInterface;
 
 class Paging implements ToSqlInterface
 {

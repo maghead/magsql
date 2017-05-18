@@ -1,5 +1,5 @@
 <?php
-use SQLBuilder\Universal\Expr\BinExpr;
+use Magsql\Universal\Expr\BinExpr;
 
 class BinExprTest extends \PHPUnit\Framework\TestCase
 {
@@ -8,7 +8,7 @@ class BinExprTest extends \PHPUnit\Framework\TestCase
         $expr = new BinExpr(1, '+', 20);
         $code = 'return ' . var_export($expr, true) . ';';
         $ret = eval($code); 
-        $this->assertInstanceOf('SQLBuilder\Universal\Expr\BinExpr', $ret);
+        $this->assertInstanceOf('Magsql\Universal\Expr\BinExpr', $ret);
         $this->assertEquals('+', $ret->op);
     }
 }

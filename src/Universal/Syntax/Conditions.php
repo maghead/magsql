@@ -1,20 +1,20 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Universal\Expr\BetweenExpr;
-use SQLBuilder\Universal\Expr\RawExpr;
-use SQLBuilder\Universal\Expr\UnaryExpr;
-use SQLBuilder\Universal\Expr\BinExpr;
-use SQLBuilder\Universal\Expr\InExpr;
-use SQLBuilder\Universal\Expr\NotInExpr;
-use SQLBuilder\Universal\Expr\LikeExpr;
-use SQLBuilder\Universal\Expr\RegExpExpr;
-use SQLBuilder\Universal\Expr\NotRegExpExpr;
-use SQLBuilder\Criteria;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\Universal\Expr\BetweenExpr;
+use Magsql\Universal\Expr\RawExpr;
+use Magsql\Universal\Expr\UnaryExpr;
+use Magsql\Universal\Expr\BinExpr;
+use Magsql\Universal\Expr\InExpr;
+use Magsql\Universal\Expr\NotInExpr;
+use Magsql\Universal\Expr\LikeExpr;
+use Magsql\Universal\Expr\RegExpExpr;
+use Magsql\Universal\Expr\NotRegExpExpr;
+use Magsql\Criteria;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
 use Countable;
 use BadMethodCallException;
 

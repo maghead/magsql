@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\MySQL\Query;
+namespace Magsql\MySQL\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
 
 /*
 @see http://dev.mysql.com/doc/refman/5.5/en/create-user.html

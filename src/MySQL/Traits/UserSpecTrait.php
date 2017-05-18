@@ -1,8 +1,8 @@
 <?php
 
-namespace SQLBuilder\MySQL\Traits;
+namespace Magsql\MySQL\Traits;
 
-use SQLBuilder\MySQL\Syntax\UserSpecification;
+use Magsql\MySQL\Syntax\UserSpecification;
 
 trait UserSpecTrait
 {

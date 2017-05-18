@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<project name="SQLBuilder" default="build">
+<project name="Magsql" default="build">
 
  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
 

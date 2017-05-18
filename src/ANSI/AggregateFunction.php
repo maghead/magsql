@@ -1,9 +1,9 @@
 <?php
 
-namespace SQLBuilder\ANSI;
+namespace Magsql\ANSI;
 
-use SQLBuilder\Universal\Expr\FuncCallExpr;
-use SQLBuilder\Utils;
+use Magsql\Universal\Expr\FuncCallExpr;
+use Magsql\Utils;
 
 class AggregateFunction
 {

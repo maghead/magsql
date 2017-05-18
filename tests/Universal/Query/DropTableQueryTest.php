@@ -1,10 +1,10 @@
 <?php
-use SQLBuilder\Universal\Query\CreateTableQuery;
-use SQLBuilder\Universal\Query\DropTableQuery;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Raw;
+use Magsql\Universal\Query\CreateTableQuery;
+use Magsql\Universal\Query\DropTableQuery;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Raw;
 
 class DropTableQueryTest extends PDOQueryTestCase
 {

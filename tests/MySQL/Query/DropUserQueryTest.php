@@ -1,9 +1,9 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Query\CreateUserQuery;
-use SQLBuilder\MySQL\Query\DropUserQuery;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Query\CreateUserQuery;
+use Magsql\MySQL\Query\DropUserQuery;
 
 class DropUserQueryTest extends \PHPUnit\Framework\TestCase
 {

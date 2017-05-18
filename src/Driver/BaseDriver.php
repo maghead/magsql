@@ -1,13 +1,13 @@
 <?php
 
-namespace SQLBuilder\Driver;
+namespace Magsql\Driver;
 
-use SQLBuilder\Raw;
-use SQLBuilder\DataType\Unknown;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ParamMarker;
-use SQLBuilder\Bind;
-use SQLBuilder\ToSqlInterface;
+use Magsql\Raw;
+use Magsql\DataType\Unknown;
+use Magsql\ArgumentArray;
+use Magsql\ParamMarker;
+use Magsql\Bind;
+use Magsql\ToSqlInterface;
 use DateTime;
 use Exception;
 use LogicException;

@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\Universal\Expr;
+namespace Magsql\Universal\Expr;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
 
 /**
  * http://dev.mysql.com/doc/refman/5.0/en/comparison-operators.html#operator_between.

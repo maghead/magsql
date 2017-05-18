@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder\Exception;
+namespace Magsql\Exception;
 
 use LogicException;
 

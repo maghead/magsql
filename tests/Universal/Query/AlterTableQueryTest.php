@@ -1,13 +1,13 @@
 <?php
-use SQLBuilder\Universal\Query\CreateTableQuery;
-use SQLBuilder\Universal\Query\DropTableQuery;
-use SQLBuilder\Universal\Query\AlterTableQuery;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\Column;
+use Magsql\Universal\Query\CreateTableQuery;
+use Magsql\Universal\Query\DropTableQuery;
+use Magsql\Universal\Query\AlterTableQuery;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\Column;
 
 class AlterTableQueryTest extends PDOQueryTestCase
 {
@@ -83,7 +83,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
     {
         $q = new AlterTableQuery('products');
         $this->assertNotNull($q);
-        $q->registerClass('alterColumn', 'SQLBuilder\MySQL\Syntax\AlterTableAlterColumn');
+        $q->registerClass('alterColumn', 'Magsql\MySQL\Syntax\AlterTableAlterColumn');
         $q->alterColumn('name')->dropDefault();
 
         $this->assertDriverQuery(new MySQLDriver, $q);
@@ -96,7 +96,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
     {
         $q = new AlterTableQuery('products');
         $this->assertNotNull($q);
-        $q->registerClass('alterColumn', 'SQLBuilder\MySQL\Syntax\AlterTableAlterColumn');
+        $q->registerClass('alterColumn', 'Magsql\MySQL\Syntax\AlterTableAlterColumn');
         $q->alterColumn('name')->setDefault('skateboard');
 
         $this->assertDriverQuery(new MySQLDriver, $q);
@@ -109,7 +109,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
     {
         $q = new AlterTableQuery('products');
         $this->assertNotNull($q);
-        $q->registerClass('setEngine', 'SQLBuilder\MySQL\Syntax\AlterTableSetEngine');
+        $q->registerClass('setEngine', 'Magsql\MySQL\Syntax\AlterTableSetEngine');
         $q->setEngine('InnoDB');
         $this->assertDriverQuery(new MySQLDriver, $q);
         $this->assertSqlStrings($q, [ 
@@ -122,7 +122,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
     {
         $q = new AlterTableQuery('products');
         $this->assertNotNull($q);
-        $q->registerClass('setAutoIncrement', 'SQLBuilder\MySQL\Syntax\AlterTableSetAutoIncrement');
+        $q->registerClass('setAutoIncrement', 'Magsql\MySQL\Syntax\AlterTableSetAutoIncrement');
         $q->setAutoIncrement(100);
         $this->assertDriverQuery(new MySQLDriver, $q);
         $this->assertSqlStrings($q, [ 
@@ -236,7 +236,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
 
 
     /**
-     * @expectedException SQLBuilder\Exception\IncompleteSettingsException
+     * @expectedException Magsql\Exception\IncompleteSettingsException
      */
     public function testModifyColumnPgWithoutChanges()
     {
@@ -254,7 +254,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
 
 
     /**
-     * @expectedException SQLBuilder\Exception\IncompleteSettingsException
+     * @expectedException Magsql\Exception\IncompleteSettingsException
      */
     public function testModifyColumnWithIncompleteSettings() 
     {
@@ -267,7 +267,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
     }
 
     /**
-     * @expectedException SQLBuilder\Exception\UnsupportedDriverException
+     * @expectedException Magsql\Exception\UnsupportedDriverException
      */
     public function testModifyColumnSqliteUnsupported()
     {
@@ -390,7 +390,7 @@ class AlterTableQueryTest extends PDOQueryTestCase
     }
 
     /**
-     * @expectedException SQLBuilder\Exception\UnsupportedDriverException
+     * @expectedException Magsql\Exception\UnsupportedDriverException
      */
     public function testRenameColumnSqlite()
     {

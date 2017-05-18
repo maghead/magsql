@@ -1,5 +1,5 @@
 <?php
-use SQLBuilder\Bind;
+use Magsql\Bind;
 
 class BindTest extends \PHPUnit\Framework\TestCase
 {
@@ -21,8 +21,8 @@ class BindTest extends \PHPUnit\Framework\TestCase
             'phone' => '123123',
         ));
 
-        $this->assertInstanceOf('SQLBuilder\Bind', $array['name']);
-        $this->assertInstanceOf('SQLBuilder\Bind', $array['phone']);
+        $this->assertInstanceOf('Magsql\Bind', $array['name']);
+        $this->assertInstanceOf('Magsql\Bind', $array['phone']);
     }
 }
 

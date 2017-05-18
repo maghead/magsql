@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder;
+namespace Magsql;
 
 class Utils
 {
@@ -15,6 +15,6 @@ class Utils
 
     public static function buildFunctionArguments($args)
     {
-        return array_map(array('SQLBuilder\\Utils', 'buildExprArg'), $args);
+        return array_map(array('Magsql\\Utils', 'buildExprArg'), $args);
     }
 }

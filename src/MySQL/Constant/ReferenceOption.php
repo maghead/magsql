@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder\MySQL\Constant;
+namespace Magsql\MySQL\Constant;
 
 class ReferenceOption
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace SQLBuilder\MySQL\Syntax;
+namespace Magsql\MySQL\Syntax;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
 use InvalidArgumentException;
 use BadMethodCallException;
 

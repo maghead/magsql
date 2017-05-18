@@ -1,18 +1,18 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Query\ExplainQuery;
-use SQLBuilder\Testing\QueryTestCase;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\Universal\Query\SelectQuery;
-use SQLBuilder\Universal\Expr\FuncCallExpr;
-use SQLBuilder\Universal\Query\CreateTableQuery;
-use SQLBuilder\Universal\Query\DropTableQuery;
-use SQLBuilder\Universal\Expr\ListExpr;
-use SQLBuilder\Bind;
-use SQLBuilder\Raw;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Query\ExplainQuery;
+use Magsql\Testing\QueryTestCase;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\Universal\Query\SelectQuery;
+use Magsql\Universal\Expr\FuncCallExpr;
+use Magsql\Universal\Query\CreateTableQuery;
+use Magsql\Universal\Query\DropTableQuery;
+use Magsql\Universal\Expr\ListExpr;
+use Magsql\Bind;
+use Magsql\Raw;
 
 class ListExprTest extends QueryTestCase
 {

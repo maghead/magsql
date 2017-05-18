@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\ToSqlInterface;
 
 class UnionQuery implements ToSqlInterface
 {

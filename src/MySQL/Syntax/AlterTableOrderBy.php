@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\MySQL\Syntax;
+namespace Magsql\MySQL\Syntax;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\ColumnNames;
+use Magsql\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\ColumnNames;
 
 class AlterTableOrderBy implements ToSqlInterface
 {

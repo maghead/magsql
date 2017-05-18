@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder\PgSQL;
+namespace Magsql\PgSQL;
 
 /**
  * @author Yo-An Lin

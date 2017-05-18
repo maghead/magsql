@@ -1,9 +1,9 @@
 <?php
 
-namespace SQLBuilder\Exception;
+namespace Magsql\Exception;
 
 use RuntimeException;
-use SQLBuilder\Driver\BaseDriver;
+use Magsql\Driver\BaseDriver;
 
 class UnsupportedDriverException extends RuntimeException
 {

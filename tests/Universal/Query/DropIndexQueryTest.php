@@ -1,10 +1,10 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Query\DropIndexQuery;
-use SQLBuilder\Testing\QueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Query\DropIndexQuery;
+use Magsql\Testing\QueryTestCase;
 
 
 class DropIndexQueryTest extends QueryTestCase
@@ -26,7 +26,7 @@ class DropIndexQueryTest extends QueryTestCase
 
 
     /**
-     * @expectedException SQLBuilder\Exception\IncompleteSettingsException
+     * @expectedException Magsql\Exception\IncompleteSettingsException
      */
     public function testDropIndexWithoutTable()
     {

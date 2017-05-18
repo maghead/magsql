@@ -1,12 +1,12 @@
 <?php
 
-namespace SQLBuilder\MySQL\Syntax;
+namespace Magsql\MySQL\Syntax;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\ToSqlInterface;
 use BadMethodCallException;
-use SQLBuilder\Exception\IncompleteSettingsException;
+use Magsql\Exception\IncompleteSettingsException;
 
 /**
  * MySQL IndexHint Support.

@@ -1,8 +1,8 @@
 <?php
 
-namespace SQLBuilder\Driver;
+namespace Magsql\Driver;
 
-use SQLBuilder\ArgumentArray;
+use Magsql\ArgumentArray;
 use DateTime;
 
 class MySQLDriver extends BaseDriver

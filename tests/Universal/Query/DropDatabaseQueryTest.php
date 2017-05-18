@@ -1,11 +1,11 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Query\DropDatabaseQuery;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Testing\QueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Query\DropDatabaseQuery;
+use Magsql\ToSqlInterface;
+use Magsql\Testing\QueryTestCase;
 
 class DropDatabaseQueryTest extends QueryTestCase
 {

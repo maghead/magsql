@@ -1,12 +1,12 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Query\CreateUserQuery;
-use SQLBuilder\MySQL\Query\GrantQuery;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\MySQL\Syntax\UserSpecification;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Query\CreateUserQuery;
+use Magsql\MySQL\Query\GrantQuery;
+use Magsql\ToSqlInterface;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\MySQL\Syntax\UserSpecification;
 
 class GrantQueryTest extends PDOQueryTestCase
 {

@@ -1,15 +1,15 @@
 <?php
-use SQLBuilder\Universal\Query\CreateTableQuery;
-use SQLBuilder\Universal\Query\DropTableQuery;
-use SQLBuilder\Universal\Query\AlterTableQuery;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\Testing\QueryTestCase;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\Column;
-use SQLBuilder\MySQL\Syntax\IndexHint;
+use Magsql\Universal\Query\CreateTableQuery;
+use Magsql\Universal\Query\DropTableQuery;
+use Magsql\Universal\Query\AlterTableQuery;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\Testing\QueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\Column;
+use Magsql\MySQL\Syntax\IndexHint;
 
 class IndexHintTest extends QueryTestCase
 {
@@ -18,7 +18,7 @@ class IndexHintTest extends QueryTestCase
     public function createDriver() { return new MySQLDriver; }
 
     /**
-     * @expectedException SQLBuilder\Exception\IncompleteSettingsException
+     * @expectedException Magsql\Exception\IncompleteSettingsException
      */
     public function testIndexHintIncompleteSettings()
     {

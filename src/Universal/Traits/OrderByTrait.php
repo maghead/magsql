@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\Universal\Traits;
+namespace Magsql\Universal\Traits;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
 
 trait OrderByTrait
 {

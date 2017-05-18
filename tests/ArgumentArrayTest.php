@@ -1,6 +1,6 @@
 <?php
-use SQLBuilder\Bind;
-use SQLBuilder\ArgumentArray;
+use Magsql\Bind;
+use Magsql\ArgumentArray;
 
 class ArgumentArrayTest extends \PHPUnit\Framework\TestCase
 {

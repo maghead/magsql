@@ -1,7 +1,7 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Testing\QueryTestCase;
-use SQLBuilder\MySQL\Query\SetPasswordQuery;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Testing\QueryTestCase;
+use Magsql\MySQL\Query\SetPasswordQuery;
 
 class SetPasswordQueryTest extends QueryTestCase
 {

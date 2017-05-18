@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\MySQL\Traits;
+namespace Magsql\MySQL\Traits;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Syntax\IndexHint;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Syntax\IndexHint;
 
 trait IndexHintTrait
 {

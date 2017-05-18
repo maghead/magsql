@@ -1,13 +1,13 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Universal\Traits\IfExistsTrait;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Universal\Traits\IfExistsTrait;
 
 class CreateDatabaseQuery implements ToSqlInterface
 {

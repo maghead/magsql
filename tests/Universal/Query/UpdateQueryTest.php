@@ -1,20 +1,20 @@
 <?php
-use SQLBuilder\Raw;
-use SQLBuilder\Universal\Query\UpdateQuery;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ParamMarker;
-use SQLBuilder\Bind;
-use SQLBuilder\Testing\PDOQueryTestCase;
+use Magsql\Raw;
+use Magsql\Universal\Query\UpdateQuery;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\ParamMarker;
+use Magsql\Bind;
+use Magsql\Testing\PDOQueryTestCase;
 
 class UpdateQueryTest extends PDOQueryTestCase
 {
 
     /**
-     * @expectedException SQLBuilder\Exception\IncompleteSettingsException
+     * @expectedException Magsql\Exception\IncompleteSettingsException
      */
     public function testUpdateWithoutTable()
     {

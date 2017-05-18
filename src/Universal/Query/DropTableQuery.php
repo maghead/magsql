@@ -1,16 +1,16 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\PgSQL\Traits\ConcurrentlyTrait;
-use SQLBuilder\Universal\Traits\IfExistsTrait;
-use SQLBuilder\Universal\Traits\RestrictTrait;
-use SQLBuilder\Universal\Traits\CascadeTrait;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\PgSQL\Traits\ConcurrentlyTrait;
+use Magsql\Universal\Traits\IfExistsTrait;
+use Magsql\Universal\Traits\RestrictTrait;
+use Magsql\Universal\Traits\CascadeTrait;
 
 /**
  * MySQL Drop table syntax.

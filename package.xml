@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0               http://pear.php.net/dtd/tasks-1.0.xsd               http://pear.php.net/dtd/package-2.0               http://pear.php.net/dtd/package-2.0.xsd">
-  <name>SQLBuilder</name>
+  <name>Magsql</name>
   <channel>pear.corneltek.com</channel>
   <summary>SQL Builder</summary>
   <description>SQL Builder</description>
@@ -25,18 +25,18 @@
   <contents>
     <dir name="/">
       <file name="doc/migration.md" role="doc" md5sum="05e39d9440a65c671cc27338e256c1aa"/>
-      <file name="src/SQLBuilder/BaseExpression.php" role="php" md5sum="6903d8f899c11ca4c6a4e2fe79f82833"/>
-      <file name="src/SQLBuilder/BetweenExpression.php" role="php" md5sum="a3cbdb36a5b06ea26bced558d22dda25"/>
-      <file name="src/SQLBuilder/Column.php" role="php" md5sum="94418d6cd1f78c3233f6c46506059360"/>
-      <file name="src/SQLBuilder/Driver.php" role="php" md5sum="4d57014434b079947240d9b22e817ac8"/>
-      <file name="src/SQLBuilder/Expression.php" role="php" md5sum="499145627c9a2dd9de706c73bc179f48"/>
-      <file name="src/SQLBuilder/ExpressionGroup.php" role="php" md5sum="0a182f9a447c19360b9f3c910559a507"/>
-      <file name="src/SQLBuilder/InExpression.php" role="php" md5sum="9e70c9ebefb67da4d4facdc5e0985ed7"/>
-      <file name="src/SQLBuilder/Inflator.php" role="php" md5sum="a4c6e3331fe569cae3e35d26248e3f18"/>
-      <file name="src/SQLBuilder/JoinExpression.php" role="php" md5sum="93d805df26cef4814b41cabc493bb589"/>
-      <file name="src/SQLBuilder/MigrationBuilder.php" role="php" md5sum="cbe2ef365c7c9dca0bf395f9dca0ca4e"/>
-      <file name="src/SQLBuilder/PDOParameter.php" role="php" md5sum="5fef1a765cc6acd8f98da836a0db6560"/>
-      <file name="src/SQLBuilder/QueryBuilder.php" role="php" md5sum="14ea5729832913d063b6e33e8128adf4"/>
+      <file name="src/Magsql/BaseExpression.php" role="php" md5sum="6903d8f899c11ca4c6a4e2fe79f82833"/>
+      <file name="src/Magsql/BetweenExpression.php" role="php" md5sum="a3cbdb36a5b06ea26bced558d22dda25"/>
+      <file name="src/Magsql/Column.php" role="php" md5sum="94418d6cd1f78c3233f6c46506059360"/>
+      <file name="src/Magsql/Driver.php" role="php" md5sum="4d57014434b079947240d9b22e817ac8"/>
+      <file name="src/Magsql/Expression.php" role="php" md5sum="499145627c9a2dd9de706c73bc179f48"/>
+      <file name="src/Magsql/ExpressionGroup.php" role="php" md5sum="0a182f9a447c19360b9f3c910559a507"/>
+      <file name="src/Magsql/InExpression.php" role="php" md5sum="9e70c9ebefb67da4d4facdc5e0985ed7"/>
+      <file name="src/Magsql/Inflator.php" role="php" md5sum="a4c6e3331fe569cae3e35d26248e3f18"/>
+      <file name="src/Magsql/JoinExpression.php" role="php" md5sum="93d805df26cef4814b41cabc493bb589"/>
+      <file name="src/Magsql/MigrationBuilder.php" role="php" md5sum="cbe2ef365c7c9dca0bf395f9dca0ca4e"/>
+      <file name="src/Magsql/PDOParameter.php" role="php" md5sum="5fef1a765cc6acd8f98da836a0db6560"/>
+      <file name="src/Magsql/QueryBuilder.php" role="php" md5sum="14ea5729832913d063b6e33e8128adf4"/>
     </dir>
   </contents>
   <dependencies>
@@ -57,18 +57,18 @@
   <phprelease>
     <filelist>
       <install name="doc/migration.md" as="migration.md"/>
-      <install name="src/SQLBuilder/BaseExpression.php" as="SQLBuilder/BaseExpression.php"/>
-      <install name="src/SQLBuilder/BetweenExpression.php" as="SQLBuilder/BetweenExpression.php"/>
-      <install name="src/SQLBuilder/Column.php" as="SQLBuilder/Column.php"/>
-      <install name="src/SQLBuilder/Driver.php" as="SQLBuilder/Driver.php"/>
-      <install name="src/SQLBuilder/Expression.php" as="SQLBuilder/Expression.php"/>
-      <install name="src/SQLBuilder/ExpressionGroup.php" as="SQLBuilder/ExpressionGroup.php"/>
-      <install name="src/SQLBuilder/InExpression.php" as="SQLBuilder/InExpression.php"/>
-      <install name="src/SQLBuilder/Inflator.php" as="SQLBuilder/Inflator.php"/>
-      <install name="src/SQLBuilder/JoinExpression.php" as="SQLBuilder/JoinExpression.php"/>
-      <install name="src/SQLBuilder/MigrationBuilder.php" as="SQLBuilder/MigrationBuilder.php"/>
-      <install name="src/SQLBuilder/PDOParameter.php" as="SQLBuilder/PDOParameter.php"/>
-      <install name="src/SQLBuilder/QueryBuilder.php" as="SQLBuilder/QueryBuilder.php"/>
+      <install name="src/Magsql/BaseExpression.php" as="Magsql/BaseExpression.php"/>
+      <install name="src/Magsql/BetweenExpression.php" as="Magsql/BetweenExpression.php"/>
+      <install name="src/Magsql/Column.php" as="Magsql/Column.php"/>
+      <install name="src/Magsql/Driver.php" as="Magsql/Driver.php"/>
+      <install name="src/Magsql/Expression.php" as="Magsql/Expression.php"/>
+      <install name="src/Magsql/ExpressionGroup.php" as="Magsql/ExpressionGroup.php"/>
+      <install name="src/Magsql/InExpression.php" as="Magsql/InExpression.php"/>
+      <install name="src/Magsql/Inflator.php" as="Magsql/Inflator.php"/>
+      <install name="src/Magsql/JoinExpression.php" as="Magsql/JoinExpression.php"/>
+      <install name="src/Magsql/MigrationBuilder.php" as="Magsql/MigrationBuilder.php"/>
+      <install name="src/Magsql/PDOParameter.php" as="Magsql/PDOParameter.php"/>
+      <install name="src/Magsql/QueryBuilder.php" as="Magsql/QueryBuilder.php"/>
     </filelist>
   </phprelease>
 </package>

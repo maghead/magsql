@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder;
+namespace Magsql;
 
 /**
  * ParamMarker is a data type for parameter mark without binding 

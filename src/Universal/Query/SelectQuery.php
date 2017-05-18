@@ -1,28 +1,28 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
 use Exception;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\Conditions;
-use SQLBuilder\Universal\Traits\OrderByTrait;
-use SQLBuilder\Universal\Traits\WhereTrait;
-use SQLBuilder\Universal\Traits\PagingTrait;
-use SQLBuilder\Universal\Expr\SelectExpr;
-use SQLBuilder\MySQL\Traits\PartitionTrait;
-use SQLBuilder\MySQL\Traits\IndexHintTrait;
-use SQLBuilder\Universal\Traits\JoinTrait;
-use SQLBuilder\Universal\Traits\OptionTrait;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\Conditions;
+use Magsql\Universal\Traits\OrderByTrait;
+use Magsql\Universal\Traits\WhereTrait;
+use Magsql\Universal\Traits\PagingTrait;
+use Magsql\Universal\Expr\SelectExpr;
+use Magsql\MySQL\Traits\PartitionTrait;
+use Magsql\MySQL\Traits\IndexHintTrait;
+use Magsql\Universal\Traits\JoinTrait;
+use Magsql\Universal\Traits\OptionTrait;
 
 /**
  * SQL Builder for generating CRUD SQL.
  *
  * @code
  *
- *  $select = new SQLBuilder\Universal\Query\SelectQuery;
+ *  $select = new Magsql\Universal\Query\SelectQuery;
  *  $sqlbuilder->select(array(
  *      'foo',
  *      'bar',

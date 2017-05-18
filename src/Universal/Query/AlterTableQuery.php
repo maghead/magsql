@@ -1,25 +1,25 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\Column;
-use SQLBuilder\Universal\Syntax\AlterTableAddConstraint;
-use SQLBuilder\Universal\Syntax\AlterTableRenameColumn;
-use SQLBuilder\Universal\Syntax\AlterTableChangeColumn;
-use SQLBuilder\Universal\Syntax\AlterTableAddColumn;
-use SQLBuilder\Universal\Syntax\AlterTableDropColumn;
-use SQLBuilder\Universal\Syntax\AlterTableRenameTable;
-use SQLBuilder\Universal\Syntax\AlterTableModifyColumn;
-use SQLBuilder\Universal\Syntax\AlterTableDropPrimaryKey;
-use SQLBuilder\Universal\Syntax\AlterTableDropForeignKey;
-use SQLBuilder\Universal\Syntax\AlterTableDropIndex;
-use SQLBuilder\Universal\Syntax\AlterTableAdd;
-use SQLBuilder\Exception\CriticalIncompatibleUsageException;
-use SQLBuilder\MySQL\Syntax\AlterTableOrderBy;
-use SQLBuilder\SyntaxExtender;
+use Magsql\Driver\BaseDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\Column;
+use Magsql\Universal\Syntax\AlterTableAddConstraint;
+use Magsql\Universal\Syntax\AlterTableRenameColumn;
+use Magsql\Universal\Syntax\AlterTableChangeColumn;
+use Magsql\Universal\Syntax\AlterTableAddColumn;
+use Magsql\Universal\Syntax\AlterTableDropColumn;
+use Magsql\Universal\Syntax\AlterTableRenameTable;
+use Magsql\Universal\Syntax\AlterTableModifyColumn;
+use Magsql\Universal\Syntax\AlterTableDropPrimaryKey;
+use Magsql\Universal\Syntax\AlterTableDropForeignKey;
+use Magsql\Universal\Syntax\AlterTableDropIndex;
+use Magsql\Universal\Syntax\AlterTableAdd;
+use Magsql\Exception\CriticalIncompatibleUsageException;
+use Magsql\MySQL\Syntax\AlterTableOrderBy;
+use Magsql\SyntaxExtender;
 
 class AlterTableQuery implements ToSqlInterface
 {

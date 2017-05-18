@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder;
+namespace Magsql;
 
 class Raw
 {

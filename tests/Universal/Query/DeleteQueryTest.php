@@ -1,17 +1,17 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Raw;
-use SQLBuilder\Bind;
-use SQLBuilder\Universal\Query\UpdateQuery;
-use SQLBuilder\Universal\Query\DeleteQuery;
-use SQLBuilder\Universal\Query\CreateTableQuery;
-use SQLBuilder\Universal\Query\CreateIndexQuery;
-use SQLBuilder\Universal\Query\DropTableQuery;
-use SQLBuilder\Testing\PDOQueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Raw;
+use Magsql\Bind;
+use Magsql\Universal\Query\UpdateQuery;
+use Magsql\Universal\Query\DeleteQuery;
+use Magsql\Universal\Query\CreateTableQuery;
+use Magsql\Universal\Query\CreateIndexQuery;
+use Magsql\Universal\Query\DropTableQuery;
+use Magsql\Testing\PDOQueryTestCase;
 
 class DeleteQueryTest extends PDOQueryTestCase
 {
@@ -49,7 +49,7 @@ class DeleteQueryTest extends PDOQueryTestCase
 
 
     /**
-     * @expectedException SQLBuilder\Exception\IncompleteSettingsException
+     * @expectedException Magsql\Exception\IncompleteSettingsException
      */
     public function testDeleteWithoutTable()
     {

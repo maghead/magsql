@@ -1,8 +1,8 @@
 <?php
 
-namespace SQLBuilder;
+namespace Magsql;
 
-use SQLBuilder\Driver\BaseDriver;
+use Magsql\Driver\BaseDriver;
 
 interface ToSqlInterface
 {

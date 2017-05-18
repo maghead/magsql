@@ -1,9 +1,9 @@
 <?php
 
-namespace SQLBuilder\PgSQL\Traits;
+namespace Magsql\PgSQL\Traits;
 
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Driver\BaseDriver;
 
 trait ConcurrentlyTrait
 {

@@ -1,9 +1,9 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Query\CreateUserQuery;
-use SQLBuilder\Testing\QueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Query\CreateUserQuery;
+use Magsql\Testing\QueryTestCase;
 
 class CreateUserQueryTest extends QueryTestCase
 {

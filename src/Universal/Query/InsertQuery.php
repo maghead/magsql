@@ -1,14 +1,14 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Universal\Traits\OptionTrait;
-use SQLBuilder\MySQL\Traits\PartitionTrait;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Universal\Traits\OptionTrait;
+use Magsql\MySQL\Traits\PartitionTrait;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
 
 /**
  * > INSERT INTO tbl_name (a,b,c) VALUES (1,2,3),(4,5,6),(7,8,9);.

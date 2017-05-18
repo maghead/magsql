@@ -1,12 +1,12 @@
 <?php
 
-namespace SQLBuilder\Universal\Expr;
+namespace Magsql\Universal\Expr;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Criteria;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Bind;
+use Magsql\Driver\BaseDriver;
+use Magsql\Criteria;
+use Magsql\ArgumentArray;
+use Magsql\ToSqlInterface;
+use Magsql\Bind;
 
 class LikeExpr implements ToSqlInterface
 {

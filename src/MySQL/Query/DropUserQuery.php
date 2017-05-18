@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\MySQL\Query;
+namespace Magsql\MySQL\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Traits\UserSpecTrait;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Traits\UserSpecTrait;
 
 /**
  * @see http://dev.mysql.com/doc/refman/5.5/en/drop-user.html

@@ -1,9 +1,9 @@
 <?php
 
-namespace SQLBuilder\MySQL\Syntax;
+namespace Magsql\MySQL\Syntax;
 
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Driver\BaseDriver;
 
 /**
  * Partition is only supported for MySQL.

@@ -1,9 +1,9 @@
 <?php
 
-namespace SQLBuilder\Universal\Traits;
+namespace Magsql\Universal\Traits;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
 
 trait LimitTrait
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\Testing;
+namespace Magsql\Testing;
 
 use PHPUnit\Framework\TestCase;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
+use Magsql\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
 
 /**
  * @codeCoverageIgnore

@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
+use Magsql\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
 
 class AlterTableDropIndex implements ToSqlInterface
 {

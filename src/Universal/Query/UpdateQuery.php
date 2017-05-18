@@ -1,26 +1,26 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Traits\OrderByTrait;
-use SQLBuilder\Universal\Traits\JoinTrait;
-use SQLBuilder\Universal\Traits\WhereTrait;
-use SQLBuilder\Universal\Traits\OptionTrait;
-use SQLBuilder\Universal\Traits\LimitTrait;
-use SQLBuilder\MySQL\Traits\PartitionTrait;
-use SQLBuilder\MySQL\Traits\IndexHintTrait;
-use SQLBuilder\Exception\IncompleteSettingsException;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Traits\OrderByTrait;
+use Magsql\Universal\Traits\JoinTrait;
+use Magsql\Universal\Traits\WhereTrait;
+use Magsql\Universal\Traits\OptionTrait;
+use Magsql\Universal\Traits\LimitTrait;
+use Magsql\MySQL\Traits\PartitionTrait;
+use Magsql\MySQL\Traits\IndexHintTrait;
+use Magsql\Exception\IncompleteSettingsException;
 
 /**
  * update statement builder.
  *
  * @code
  *
- *  $query = new SQLBuilder\Universal\Query\UpdateQuery;
+ *  $query = new Magsql\Universal\Query\UpdateQuery;
  *  $query->update(array(
  *      'name' => 'foo',
  *      'values' => 'bar',

@@ -1,10 +1,10 @@
 <?php
 
-namespace SQLBuilder\Universal\Traits;
+namespace Magsql\Universal\Traits;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\Conditions;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\Conditions;
 use InvalidArgumentException;
 
 trait WhereTrait

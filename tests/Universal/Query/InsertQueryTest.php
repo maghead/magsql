@@ -1,13 +1,13 @@
 <?php
-use SQLBuilder\Raw;
-use SQLBuilder\Bind;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Query\InsertQuery;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
+use Magsql\Raw;
+use Magsql\Bind;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Query\InsertQuery;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
 
 class InsertQueryTest extends PDOQueryTestCase
 {

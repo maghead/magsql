@@ -5,14 +5,14 @@ require( 'tests/bootstrap.php');
 #  $mysqli = new mysqli("localhost", "root", "123123", "benchmarks");
 
 
-$driver = new SQLBuilder\Driver;
+$driver = new Magsql\Driver;
 $driver->configure('driver','pgsql');
 $driver->configure('quote_table',true);
 $driver->configure('quote_column',true);
 $driver->configure('trim',true);
 $driver->configure('placeholder','named');
 
-$sb = new SQLBuilder\QueryBuilder;
+$sb = new Magsql\QueryBuilder;
 $sb->driver = $driver;
 
 

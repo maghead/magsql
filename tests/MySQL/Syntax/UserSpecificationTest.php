@@ -1,17 +1,17 @@
 <?php
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Query\CreateUserQuery;
-use SQLBuilder\Testing\QueryTestCase;
-use SQLBuilder\MySQL\Syntax\UserSpecification;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\BaseDriver;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Query\CreateUserQuery;
+use Magsql\Testing\QueryTestCase;
+use Magsql\MySQL\Syntax\UserSpecification;
 
 class UserSpecificationTest extends \PHPUnit\Framework\TestCase
 {
     public function testCreateWithSpec()
     {
         $spec = UserSpecification::createWithFormat(NULL, 'localuser@localhost');
-        $this->assertInstanceOf('SQLBuilder\MySQL\Syntax\UserSpecification', $spec);
+        $this->assertInstanceOf('Magsql\MySQL\Syntax\UserSpecification', $spec);
     }
 
     /**

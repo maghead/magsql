@@ -1,13 +1,13 @@
 <?php
 
-namespace SQLBuilder\Universal\Traits;
+namespace Magsql\Universal\Traits;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\Universal\Syntax\ColumnNames;
-use SQLBuilder\Universal\Syntax\Constraint;
-use SQLBuilder\Universal\Syntax\KeyReference;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\ArgumentArray;
+use Magsql\Universal\Syntax\ColumnNames;
+use Magsql\Universal\Syntax\Constraint;
+use Magsql\Universal\Syntax\KeyReference;
 
 trait KeyTrait
 {

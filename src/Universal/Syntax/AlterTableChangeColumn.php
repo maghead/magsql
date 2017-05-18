@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\ArgumentArray;
+use Magsql\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\ArgumentArray;
 
 class AlterTableChangeColumn implements ToSqlInterface
 {

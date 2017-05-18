@@ -1,8 +1,8 @@
 <?php
 
-namespace SQLBuilder\Universal\Traits;
+namespace Magsql\Universal\Traits;
 
-use SQLBuilder\Universal\Syntax\Constraint;
+use Magsql\Universal\Syntax\Constraint;
 
 trait ConstraintTrait
 {

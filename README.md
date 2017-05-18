@@ -1,7 +1,7 @@
-# SQLBuilder for PHP
+# Magsql for PHP
 
-[![Build Status](https://travis-ci.org/c9s/SQLBuilder.svg?branch=master)](http://travis-ci.org/c9s/SQLBuilder)
-[![Coverage Status](https://img.shields.io/coveralls/c9s/SQLBuilder.svg)](https://coveralls.io/r/c9s/SQLBuilder)
+[![Build Status](https://travis-ci.org/c9s/Magsql.svg?branch=master)](http://travis-ci.org/c9s/Magsql)
+[![Coverage Status](https://img.shields.io/coveralls/c9s/Magsql.svg)](https://coveralls.io/r/c9s/Magsql)
 [![Latest Stable Version](https://poser.pugx.org/corneltek/sqlbuilder/v/stable.svg)](https://packagist.org/packages/corneltek/sqlbuilder) 
 [![Total Downloads](https://poser.pugx.org/corneltek/sqlbuilder/downloads.svg)](https://packagist.org/packages/corneltek/sqlbuilder) 
 [![Monthly Downloads](https://poser.pugx.org/corneltek/sqlbuilder/d/monthly)](https://packagist.org/packages/corneltek/sqlbuilder)
@@ -11,10 +11,10 @@
 If you're looking for something that is not an ORM but can generate SQL for
 you, you just found the right one.
 
-SQLBuilder is not an ORM (Object relational mapping) system, but a toolset that helps you generate 
+Magsql is not an ORM (Object relational mapping) system, but a toolset that helps you generate 
 cross-platform SQL queries in PHP.
 
-SQLBuilder is a stand-alone library, you can simply install it through composer
+Magsql is a stand-alone library, you can simply install it through composer
 or just require them (the class files) with your autoloader, and it has no
 dependencies.
 
@@ -33,10 +33,10 @@ dependencies.
 Here is a short example of using Universal SelectQuery
 
 ```php
-use SQLBuilder\Universal\Query\SelectQuery;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
+use Magsql\Universal\Query\SelectQuery;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
 
 $mysql = new MySQLDriver;
 $args = new ArgumentArray;
@@ -68,7 +68,7 @@ var_dump($args);
 
 ## A More Detailed Description
 
-Unlike other SQL utilities, SQLBuilder let you define the quote style and the
+Unlike other SQL utilities, Magsql let you define the quote style and the
 parameter marker type. there are 2 parameter marker type you can choose:
 
 1. Question mark parameter marker (`?`)
@@ -99,7 +99,7 @@ Universql Queries:
 - DropIndexQuery
 
 To see the implementation details, you can check the source code inside **Universal** namespace:
-<https://github.com/c9s/SQLBuilder/tree/master/SQLBuilder/Universal/Query>
+<https://github.com/c9s/Magsql/tree/master/Magsql/Universal/Query>
 
 MySQL Queries:
 
@@ -121,7 +121,7 @@ For PostgreSQL platform, the implementation is according to the specification of
 
 ## Getting Started
 
-[Documentation](https://github.com/c9s/SQLBuilder/wiki)
+[Documentation](https://github.com/c9s/Magsql/wiki)
 
 ## Development
 

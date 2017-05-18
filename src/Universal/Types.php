@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder\Universal;
+namespace Magsql\Universal;
 
 class Types
 {

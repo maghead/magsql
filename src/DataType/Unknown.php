@@ -1,6 +1,6 @@
 <?php
 
-namespace SQLBuilder\DataType;
+namespace Magsql\DataType;
 
 class Unknown
 {

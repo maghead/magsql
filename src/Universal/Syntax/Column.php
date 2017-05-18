@@ -1,14 +1,14 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Driver\PgSQLDriver;
-use SQLBuilder\Driver\SQLiteDriver;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Exception\UnsupportedDriverException;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Driver\PgSQLDriver;
+use Magsql\Driver\SQLiteDriver;
+use Magsql\ArgumentArray;
+use Magsql\ToSqlInterface;
+use Magsql\Exception\UnsupportedDriverException;
 use InvalidArgumentException;
 use Closure;
 

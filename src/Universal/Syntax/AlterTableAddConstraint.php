@@ -1,11 +1,11 @@
 <?php
 
-namespace SQLBuilder\Universal\Syntax;
+namespace Magsql\Universal\Syntax;
 
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Universal\Traits\KeyTrait;
-use SQLBuilder\ArgumentArray;
+use Magsql\ToSqlInterface;
+use Magsql\Driver\BaseDriver;
+use Magsql\Universal\Traits\KeyTrait;
+use Magsql\ArgumentArray;
 
 class AlterTableAddConstraint implements ToSqlInterface
 {

@@ -1,25 +1,25 @@
 <?php
 
-namespace SQLBuilder\Universal\Query;
+namespace Magsql\Universal\Query;
 
-use SQLBuilder\Driver\BaseDriver;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\ToSqlInterface;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\MySQL\Traits\PartitionTrait;
-use SQLBuilder\Universal\Traits\OrderByTrait;
-use SQLBuilder\Universal\Traits\JoinTrait;
-use SQLBuilder\Universal\Traits\OptionTrait;
-use SQLBuilder\Universal\Traits\WhereTrait;
-use SQLBuilder\Universal\Traits\LimitTrait;
-use SQLBuilder\Exception\IncompleteSettingsException;
+use Magsql\Driver\BaseDriver;
+use Magsql\Driver\MySQLDriver;
+use Magsql\ToSqlInterface;
+use Magsql\ArgumentArray;
+use Magsql\MySQL\Traits\PartitionTrait;
+use Magsql\Universal\Traits\OrderByTrait;
+use Magsql\Universal\Traits\JoinTrait;
+use Magsql\Universal\Traits\OptionTrait;
+use Magsql\Universal\Traits\WhereTrait;
+use Magsql\Universal\Traits\LimitTrait;
+use Magsql\Exception\IncompleteSettingsException;
 
 /**
  * Delete Statement Query.
  *
  * @code
  *
- *  $query = new SQLBuilder\Universal\Query\DeleteQuery;
+ *  $query = new Magsql\Universal\Query\DeleteQuery;
  *  $query->delete(array(
  *      'name' => 'foo',
  *      'values' => 'bar',

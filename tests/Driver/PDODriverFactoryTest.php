@@ -1,12 +1,12 @@
 <?php
-use SQLBuilder\Driver\PDODriverFactory;
-use SQLBuilder\Driver\MySQLDriver;
-use SQLBuilder\Testing\PDOQueryTestCase;
-use SQLBuilder\DataType\Unknown;
-use SQLBuilder\Bind;
-use SQLBuilder\Raw;
-use SQLBuilder\ArgumentArray;
-use SQLBuilder\ParamMarker;
+use Magsql\Driver\PDODriverFactory;
+use Magsql\Driver\MySQLDriver;
+use Magsql\Testing\PDOQueryTestCase;
+use Magsql\DataType\Unknown;
+use Magsql\Bind;
+use Magsql\Raw;
+use Magsql\ArgumentArray;
+use Magsql\ParamMarker;
 
 class PDODriverFactoryTest extends PDOQueryTestCase
 {
