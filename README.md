@@ -1,4 +1,4 @@
-# Magsql for PHP
+# Magsql - the powerful sql builder designed for PHP7
 
 [![Build Status](https://travis-ci.org/maghead/magsql.svg?branch=master)](http://travis-ci.org/maghead/magsql)
 [![Coverage Status](https://img.shields.io/coveralls/maghead/magsql.svg)](https://coveralls.io/r/maghead/magsql)
