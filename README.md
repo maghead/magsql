@@ -1,7 +1,7 @@
 # Magsql for PHP
 
-[![Build Status](https://travis-ci.org/c9s/Magsql.svg?branch=master)](http://travis-ci.org/c9s/Magsql)
-[![Coverage Status](https://img.shields.io/coveralls/c9s/Magsql.svg)](https://coveralls.io/r/c9s/Magsql)
+[![Build Status](https://travis-ci.org/maghead/magsql.svg?branch=master)](http://travis-ci.org/maghead/magsql)
+[![Coverage Status](https://img.shields.io/coveralls/maghead/magsql.svg)](https://coveralls.io/r/maghead/magsql)
 [![Latest Stable Version](https://poser.pugx.org/corneltek/sqlbuilder/v/stable.svg)](https://packagist.org/packages/corneltek/sqlbuilder) 
 [![Total Downloads](https://poser.pugx.org/corneltek/sqlbuilder/downloads.svg)](https://packagist.org/packages/corneltek/sqlbuilder) 
 [![Monthly Downloads](https://poser.pugx.org/corneltek/sqlbuilder/d/monthly)](https://packagist.org/packages/corneltek/sqlbuilder)
@@ -99,7 +99,7 @@ Universql Queries:
 - DropIndexQuery
 
 To see the implementation details, you can check the source code inside **Universal** namespace:
-<https://github.com/c9s/Magsql/tree/master/Magsql/Universal/Query>
+<https://github.com/maghead/magsql/tree/master/Magsql/Universal/Query>
 
 MySQL Queries:
 
@@ -121,7 +121,7 @@ For PostgreSQL platform, the implementation is according to the specification of
 
 ## Getting Started
 
-[Documentation](https://github.com/c9s/Magsql/wiki)
+[Documentation](https://github.com/maghead/magsql/wiki)
 
 ## Development
 
