@@ -1,11 +1,11 @@
 {
-    "name": "corneltek/sqlbuilder",
-    "description": "Fast and Powerful SQLBuilder for PHP",
+    "name": "maghead/magsql",
+    "description": "Fast and Powerful SQL for PHP",
     "license": "MIT",
     "authors": [
         {
-            "name": "c9s",
-            "email": "cornelius.howl@gmail.com"
+            "name": "Yo-An Lin",
+            "email": "yoanlin93@gmail.com"
         }
     ],
     "require-dev": {
