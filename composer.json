@@ -8,6 +8,9 @@
             "email": "yoanlin93@gmail.com"
         }
     ],
+    "replace": {
+        "corneltek/sqlbuilder": "*"
+    },
     "require-dev": {
         "corneltek/phpunit-testmore": "dev-master"
     },
