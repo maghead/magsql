@@ -21,7 +21,7 @@ before_script:
 - psql -c 'create database sqlbuilder;' -U postgres
 - mysql -e 'create database sqlbuilder;'
 script:
-- phpunit -c phpunit.travis-ci.xml
+- phpunit -c phpunit.xml.dist
 after_success:
 - php vendor/bin/coveralls -v
 cache:
