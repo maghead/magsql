@@ -13,6 +13,7 @@ use DateTime;
 class SQLiteDriver extends BaseDriver
 {
     const ID = 'sqlite';
+    const PLATFORM_ID = 'sqlite';
 
     public function quoteIdentifier($id)
     {

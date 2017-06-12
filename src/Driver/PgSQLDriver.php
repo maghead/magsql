@@ -7,6 +7,8 @@ use DateTime;
 class PgSQLDriver extends BaseDriver
 {
     const ID = 'pgsql';
+    const PLATFORM_ID = 'pgsql';
+    
 
     public function quoteIdentifier($id)
     {
