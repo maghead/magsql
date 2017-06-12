@@ -491,6 +491,14 @@ class Column implements ToSqlInterface
         return $this;
     }
 
+
+    public function onUpdate($update)
+    {
+        $this->onUpdate = $update;
+
+        return $this;
+    }
+
     /************************************************
      * DateTime related types
      *************************************************/
@@ -717,7 +725,9 @@ class Column implements ToSqlInterface
                 $sql .= ' DEFAULT '.$driver->deflate($default);
             }
         }
+
         if ($this->onUpdate && $driver instanceof MySQLDriver) {
+
             $sql .= ' ON UPDATE '.$driver->deflate($this->onUpdate);
         }
 
