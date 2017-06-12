@@ -112,17 +112,5 @@ class PDODriverFactoryTest extends PDOQueryTestCase
         $driver->alwaysBindValues(true);
         $this->assertEquals('?', $driver->deflate(new ParamMarker('hack'), $args));
     }
-
-    public function testSetQuoter()
-    {
-        $conn = $this->createConnection('mysql');
-        $driver = new MySQLDriver;
-        $driver->setQuoter(function($str) use($conn) {
-            return $conn->quote($str);
-        });
-        $this->assertEquals("'str'", $driver->quote('str'));
-    }
-
-
 }
 
