@@ -35,25 +35,11 @@ abstract class BaseDriver
 
     public $quoteTable;
 
-    /**
-     * String quoter handler.
-     *  
-     *  Array:
-     *
-     *    array($obj,'method')
-     */
-    public $quoter;
-
     protected $conn;
 
     public function __construct(PDO $conn = null)
     {
         $this->conn = $conn;
-    }
-
-    public function setQuoter(callable $quoter)
-    {
-        $this->quoter = $quoter;
     }
 
     public function alwaysBindValues($on = true)
@@ -129,8 +115,8 @@ abstract class BaseDriver
      */
     public function quote($string)
     {
-        if ($this->quoter) {
-            return call_user_func($this->quoter, $string);
+        if ($this->conn) {
+            return $this->conn->quote($str);
         }
 
         // Defualt escape function, this is not safe.
