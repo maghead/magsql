@@ -12,6 +12,8 @@ use DateTime;
  */
 class SQLiteDriver extends BaseDriver
 {
+    const ID = 'sqlite';
+
     public function quoteIdentifier($id)
     {
         return '`'.addcslashes($id, '`').'`';

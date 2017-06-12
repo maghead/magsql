@@ -6,6 +6,8 @@ use DateTime;
 
 class PgSQLDriver extends BaseDriver
 {
+    const ID = 'pgsql';
+
     public function quoteIdentifier($id)
     {
         return '"'.addcslashes($id, '"').'"';

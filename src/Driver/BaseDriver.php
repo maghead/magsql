@@ -74,7 +74,6 @@ abstract class BaseDriver
 
     abstract public function quoteIdentifier($id);
 
-
     /**
      * Check driver option to quote column name.
      *

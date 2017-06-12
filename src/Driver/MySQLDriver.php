@@ -7,6 +7,8 @@ use DateTime;
 
 class MySQLDriver extends BaseDriver
 {
+    const ID = 'mysql';
+
     public $quoteTable = false;
 
     public function quoteIdentifier($id)
