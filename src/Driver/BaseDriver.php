@@ -11,6 +11,7 @@ use Magsql\ToSqlInterface;
 use DateTime;
 use Exception;
 use LogicException;
+use PDO;
 
 abstract class BaseDriver
 {
@@ -42,6 +43,13 @@ abstract class BaseDriver
      *    array($obj,'method')
      */
     public $quoter;
+
+    protected $conn;
+
+    public function __construct(PDO $conn = null)
+    {
+        $this->conn = $conn;
+    }
 
     public function setQuoter(callable $quoter)
     {
@@ -112,18 +120,15 @@ abstract class BaseDriver
 
     /**
      * quote & escape string with single quote.
+     *
+     * quote functions for different platform
+     *
+     *    string mysqli_real_escape_string ( mysqli $link , string $escapestr )
+     *    string pg_escape_string ([ resource $connection ], string $data )
+     *    string PDO::quote ( string $string [, int $parameter_type = PDO::PARAM_STR ] )
      */
     public function quote($string)
     {
-        /*
-         * quote:
-         *
-         *    string mysqli_real_escape_string ( mysqli $link , string $escapestr )
-         *    string pg_escape_string ([ resource $connection ], string $data )
-         *    string PDO::quote ( string $string [, int $parameter_type = PDO::PARAM_STR ] )
-         *
-         *  $driver->configure('quote',array($pgconn,'escape_string'));
-         */
         if ($this->quoter) {
             return call_user_func($this->quoter, $string);
         }
