@@ -47,7 +47,7 @@ class CreateTableQuery implements ToSqlInterface
 
     public function column($col)
     {
-        if (gettype($col) == 'string') {
+        if (is_string($col)) {
             $col = new Column($col);
         }
         $this->columns[] = $col;
